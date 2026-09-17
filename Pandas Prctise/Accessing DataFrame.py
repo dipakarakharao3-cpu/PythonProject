@@ -15,11 +15,11 @@ df = pd.DataFrame(data)
 # age_column = df['Age']
 # print(age_column)
 #
-                                                        ### Accessing Rows by Index "1" ###
-Second_row = df.loc[1]
-print(Second_row)
-
-#                                                          ### Accessing Multiple Rows or column ###
+#                                                         ### Accessing Rows by Index "1" ###
+# Second_row = df.loc[1]
+# print(Second_row)
+#
+# #                                                          ### Accessing Multiple Rows or column ###
 # Subset = df.loc[0:2,['Name','Age']]
 # print(Subset)
 
@@ -28,5 +28,5 @@ print(Second_row)
 # print(filter_data)
 
                                                         ### Accessing Specific Cells with at[] ###
-# Salary_at_index_2 = df.at[2,'Salary']
-# print("Salary is : ",Salary_at_index_2)
+Salary_at_index_2 = df.at[2,'Salary']
+print("Salary is : ",Salary_at_index_2)
