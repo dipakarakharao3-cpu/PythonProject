@@ -61,7 +61,7 @@ display(dataFrame.loc[filtered_values])
 ## "query " method all rows having Salary lesser or equal to 100000 and Age < 40, and their
 # JOB starts with ‘C’ from the dataframe.
 
-from IPython.display import display
+from IPython.display import display 
 import pandas as pd
 dataFrame = pd.DataFrame({'Name': [' RACHEL  ', ' MONICA  ', ' PHOEBE  ',
                                    '  ROSS    ', 'CHANDLER', ' JOEY    '],
