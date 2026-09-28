@@ -77,3 +77,7 @@ display(dataFrame.query('Salary  <= 100000 & Age < 40 & JOB.str.startswith("C").
 print(dataFrame.query('Salary >=94000 & Age >=30 & JOB.str.startswith("A").values'))
 
 
+## eval multiple condition ##
+# eval and query works only with columns
+
+display(dataFrame[dataFrame.eval("Salary <=100000 & (Age <40) & JOB.str.startswith('A').values")])
