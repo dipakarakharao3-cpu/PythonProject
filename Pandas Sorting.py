@@ -15,13 +15,22 @@
 # sorted_df = df.sort_values(inplace=['Age', 'Score'])
 # print(sorted_df)
 
-import pandas as pd
-data = {
-    "Name": ["Bob", "Dog", "Charlie", "David", "Apple"],
-    "Age": [28, 22, 25, 22, 28],
-    "Score": [85, 90, 95, 80, 88]
-}
-df = pd.DataFrame(data)
+# import pandas as pd
+# data = {
+#     "Name": ["Bob", "Dog", "Charlie", "David", "Apple"],
+#     "Age": [28, 22, 25, 22, 28],
+#     "Score": [85, 90, 95, 80, 88]
+# }
+# df = pd.DataFrame(data)
+#
+# sorted_df = df.sort_values(by='Name', key=lambda col: col.str.lower())
+# print(sorted_df)
 
-sorted_df = df.sort_values(by='Name', key=lambda col: col.str.lower())
+
+import pandas as pd
+data = {"Name" :["Amit","Dipak","Rachit"," Sumeet "],
+        "Age":[35,34,22,25],
+        "Score":[85,90,95,80]}
+df = pd.DataFrame(data)
+sorted_df = df.sort_values(by = 'Name', key = lambda col: col.str.lower())
 print(sorted_df)
